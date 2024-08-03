@@ -11,6 +11,7 @@ export class SongsService {
     }
 
     findAll(){
+        throw new Error('error in the data base while fetching record.');
         return this.songs;
     }
 }
