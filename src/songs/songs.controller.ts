@@ -9,7 +9,7 @@ export class SongsController {
     constructor(private songsService: SongsService){}
 
     @Post()
-    create(@Body() CreateSongDTO:CreateSongDTO){
+    create(@Body() CreateSongDTO: CreateSongDTO){
         return this.songsService.create(CreateSongDTO);
     }
 
